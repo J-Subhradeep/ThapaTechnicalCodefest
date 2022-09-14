@@ -4,11 +4,13 @@ export const NavbarWrapper = styled.div`
 	position: fixed;
 	background-color: rgb(224, 224, 225);
 	height: 70px;
+	position: relative;
+
 	.main {
 		width: 100%;
 		height: 100%;
 		display: grid;
-		grid-template-columns: 4fr 6fr;
+		grid-template-columns: 5fr 6fr;
 		.logo {
 			height: 100%;
 			width: 100%;
@@ -33,7 +35,7 @@ export const NavbarWrapper = styled.div`
 				position: relative;
 				.login-btn {
 					border-radius: 30px;
-					border: 1px solid rgb(103, 61, 230);
+
 					width: 110px;
 				}
 			}
