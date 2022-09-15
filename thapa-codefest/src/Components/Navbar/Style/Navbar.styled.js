@@ -25,6 +25,7 @@ export const NavbarWrapper = styled.div`
 				justify-content: center;
 				height: 100%;
 				width: 60%;
+				/* background-color: green; */
 			}
 			.menu-login-cart {
 				display: flex;
