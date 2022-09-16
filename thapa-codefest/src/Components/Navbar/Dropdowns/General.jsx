@@ -6,40 +6,29 @@ import { Button } from "@mui/material";
 import web from "../Static/Images/web-hosting.png";
 import cloud from "../Static/Images/cloud.png";
 import wordpress from "../Static/Images/wordpress.png";
-const General = () => {
+const General = (props) => {
 	return (
 		<motion.div initial={{ y: -100 }} animate={{ y: 10 }}>
 			<DropdownWrapper>
 				<div className="list-dropdown">
-					<div className="li-item">
-						<div className="li-icon">
-							<img src={web} alt="" height="auto" width="50px" />
-						</div>
-						<div className="li-text">
-							<div className="li-heading">Web Hosting</div>
-							<div className="li-subtext">For small to medium websites.</div>
-						</div>
-					</div>
-					<div className="li-item">
-						<div className="li-icon">
-							<img src={cloud} alt="" height="auto" width="50px" />
-						</div>
-						<div className="li-text">
-							<div className="li-heading">Cloud Hosting</div>
-							<div className="li-subtext">For large scale projects.</div>
-						</div>
-					</div>
-					<div className="li-item">
-						<div className="li-icon">
-							<img src={wordpress} alt="" height="auto" width="50px" />
-						</div>
-						<div className="li-text">
-							<div className="li-heading">Cloud Hosting</div>
-							<div className="li-subtext">
-								Optimized solutions for WordPress hosting.
+					{props.content.map((value, index) => {
+						return (
+							<div className="li-item">
+								<div className="li-icon">
+									<img
+										src={value.img}
+										alt=""
+										height={value.height ? value.height : "50px"}
+										width="auto"
+									/>
+								</div>
+								<div className="li-text">
+									<div className="li-heading">{value.heading}</div>
+									<div className="li-subtext">{value.subHeading}</div>
+								</div>
 							</div>
-						</div>
-					</div>
+						);
+					})}
 				</div>
 			</DropdownWrapper>
 		</motion.div>

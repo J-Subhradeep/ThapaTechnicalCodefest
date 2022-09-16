@@ -6,13 +6,22 @@ import { selectMenu } from "./Slices/MenudropdowniconSlice";
 import { useDispatch, useSelector } from "react-redux";
 import General from "./Dropdowns/General";
 import { menu } from "./Static/Js/menu";
+import Hosting from "./Dropdowns/Hosting";
+import VPS from "./Dropdowns/VPS";
+import Email from "./Dropdowns/Email";
+import Domain from "./Dropdowns/Domain";
 
 const MenuItem = (props) => {
 	const value = useSelector((state) => state.menuSelect.value);
 	const dispatch = useDispatch();
 	const [state, setState] = useState("");
+	const [dropdownComponent, setDropdownComponent] = useState(<></>);
+	const components = [<Hosting />, <VPS />, <Email />, <Domain />];
 	useEffect(() => {
-		if (value != -1) setState(menu[value]);
+		if (value != -1) {
+			setState(menu[value]);
+			setDropdownComponent(components[value]);
+		}
 	}, [value]);
 
 	return (
@@ -66,7 +75,7 @@ const MenuItem = (props) => {
 						</motion.div>
 					)}
 				</div>
-				{props.value == state && value != -1 && <General />}
+				{props.value == state && value != -1 && dropdownComponent}
 				{/* {props.value == "Domain" && <General />} */}
 			</MenuItemWrapper>
 		</>

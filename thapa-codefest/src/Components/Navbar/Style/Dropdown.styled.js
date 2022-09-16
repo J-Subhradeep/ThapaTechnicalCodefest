@@ -5,7 +5,7 @@ export const DropdownWrapper = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 300px;
+	min-height: 200px;
 	width: 340px;
 	border-radius: 10px;
 	background-color: white;
@@ -14,12 +14,15 @@ export const DropdownWrapper = styled.div`
 		width: 100%;
 		height: 100%;
 		padding: 15px 10px 20px 20px;
-
+		transition: all 0.5s;
+		scale: 1;
+		cursor: pointer;
 		.li-item {
-			display: flex;
+			display: grid;
+			grid-template-columns: 3fr 9fr;
 			align-items: center;
 			/* background-color: grey; */
-			margin-top: 10px;
+			margin: 5px;
 			.li-icon {
 				padding: 10px;
 			}
@@ -37,6 +40,10 @@ export const DropdownWrapper = styled.div`
 			.li-subtext {
 				padding: 3px 0;
 				font-size: 13px;
+			}
+			&:hover {
+				scale: 1.02;
+				transition: all 0.5s;
 			}
 		}
 	}

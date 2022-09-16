@@ -14,6 +14,8 @@ import { useEffect } from "react";
 import { selectMenu } from "./Slices/MenudropdowniconSlice";
 import { useDispatch, useSelector } from "react-redux";
 import General from "./Dropdowns/General";
+import { IconButton } from "@mui/material";
+import Menu from "@mui/icons-material/Menu";
 const Navbar = () => {
 	const dispatch = useDispatch();
 	// const value = useSelector((state) => state.menuSelect.value);
@@ -39,26 +41,49 @@ const Navbar = () => {
 								<MenuItem value={value} key={index} index={index} />
 							))}
 						</div>
-						<div className="menu-login-cart">
-							<div>
-								<Button
-									className="login-btn"
-									sx={{
-										color: "rgb(103,61,230)",
-										border: "1px solid rgb(103, 61, 230)",
-									}}
-									endIcon={<VpnKeyIcon />}
-								>
-									Login
-								</Button>
-								<Button
-									className="login-btn"
-									sx={{ color: "rgb(103,61,230)", marginX: "10px" }}
-									endIcon={<ShoppingCartIcon />}
-								>
-									Cart
-								</Button>
-							</div>
+						<div
+							className="menu-login-cart"
+							onChange={() => {
+								console.log("hi");
+							}}
+						>
+							{/* <div> */}
+							<Button
+								className="login-btn"
+								sx={{
+									color: "rgb(103,61,230)",
+									border: "1px solid rgb(103, 61, 230)",
+								}}
+								endIcon={<VpnKeyIcon />}
+							>
+								Login
+							</Button>
+							<Button
+								className="login-btn"
+								sx={{ color: "rgb(103,61,230)", marginX: "10px" }}
+								endIcon={<ShoppingCartIcon />}
+							>
+								Cart
+							</Button>
+							<IconButton
+								className="menu-btn-2"
+								sx={{ color: "rgb(103,61,230)", marginX: "10px" }}
+							>
+								<VpnKeyIcon />
+							</IconButton>
+							<IconButton
+								className="menu-btn-2"
+								sx={{ color: "rgb(103,61,230)", marginX: "10px" }}
+							>
+								<ShoppingCartIcon />
+							</IconButton>
+							<IconButton
+								className="menu-btn"
+								sx={{ color: "rgb(103,61,230)", marginX: "10px" }}
+							>
+								<Menu />
+							</IconButton>
+							{/* </div> */}
 						</div>
 					</div>
 				</div>
