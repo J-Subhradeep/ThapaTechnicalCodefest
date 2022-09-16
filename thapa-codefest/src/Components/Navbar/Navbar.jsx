@@ -16,9 +16,11 @@ import { useDispatch, useSelector } from "react-redux";
 import General from "./Dropdowns/General";
 import { IconButton } from "@mui/material";
 import Menu from "@mui/icons-material/Menu";
+import Sidebar from "./Sidebar";
+import { useState } from "react";
 const Navbar = () => {
 	const dispatch = useDispatch();
-	// const value = useSelector((state) => state.menuSelect.value);
+	const [openSidebar, setOpenSidebar] = useState(false);
 	useEffect(() => {
 		document.addEventListener("click", (e) => {
 			if (!menu.includes(e.target.id) || menu.includes(e.target.className)) {
@@ -30,6 +32,7 @@ const Navbar = () => {
 
 	return (
 		<>
+			<Sidebar openSidebar={openSidebar} setOpenSidebar={setOpenSidebar} />
 			<NavbarWrapper>
 				<div className="main">
 					<motion.div className="logo" initial={{ y: -100 }} animate={{ y: 0 }}>
@@ -80,6 +83,7 @@ const Navbar = () => {
 							<IconButton
 								className="menu-btn"
 								sx={{ color: "rgb(103,61,230)", marginX: "10px" }}
+								onClick={() => setOpenSidebar(true)}
 							>
 								<Menu />
 							</IconButton>
