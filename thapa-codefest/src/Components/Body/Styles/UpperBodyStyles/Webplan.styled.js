@@ -170,4 +170,8 @@ export const WebplanWrapper = styled.section`
   .see-all-main-grid {
     justify-content: flex-start;
   }
+.desp-WU {
+  width: 90vw;
+}
+
 `;
