@@ -11,7 +11,10 @@ const DomainSearchBox = () => {
           next step (choose between .in, .com, .online, .live, .store, .info and
           many more
         </p>
-        
+        <div class="search-container">
+          <input type="text" placeholder="Search.." name="search" className="search-bar"/>
+          <button type="submit" className="submit-btn">Submit</button>
+        </div>
       </DomainSearchBoxWrapper>
     </>
   );

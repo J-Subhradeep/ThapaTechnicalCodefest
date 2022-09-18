@@ -118,7 +118,6 @@ export const WebplanWrapper = styled.section`
     font-size: 15px;
     font-weight: 700;
     background: #673de6;
-    z-index: -2;
   }
   .btn-select-pricing-grid-main:hover {
     background: #5230b8;
