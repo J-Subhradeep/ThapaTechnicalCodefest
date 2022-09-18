@@ -9,6 +9,7 @@ export const HeroSectionWrapper = styled.div`
     rgba(77, 29, 223, 1) 70%,
     rgba(0, 1, 255, 1) 100%
   );
+  contain: content;
   .hero-grid-main {
     width: 100%;
     height: 100%;
@@ -27,7 +28,6 @@ export const HeroSectionWrapper = styled.div`
         position: absolute;
         width: 500px;
         font-size: 20px;
-        /* text-align: center; */
         text-transform: capitalize;
         color: white;
       }
@@ -74,6 +74,50 @@ export const HeroSectionWrapper = styled.div`
         display: flex;
         align-items: center;
         /* left: ; */
+      }
+    }
+  }
+  @media screen and (max-width: 1300px) {
+    .hero-grid-main {
+      .hero-left-main {
+        /* text-align: center; */
+        .left-heading {
+          font-size: 18px;
+          /* color: green; */
+          width: 400px;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 900px) {
+    .hero-grid-main {
+      .hero-left-main {
+        /* text-align: center; */
+        .left-heading {
+          font-size: 18px;
+          /* color: green; */
+          width: 300px;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 700px) {
+    .hero-grid-main {
+      display: flex;
+      .hero-left-main {
+        /* text-align: center; */
+        .left-heading {
+          font-size: 20px;
+          /* color: green; */
+          width: 450px;
+        }
+        .get-started {
+          margin-top: 45px;
+        }
+        .money-back {
+          margin-top: 20px;
+          font-size: 15px;
+        }
       }
     }
   }

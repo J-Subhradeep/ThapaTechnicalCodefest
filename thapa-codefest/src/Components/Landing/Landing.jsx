@@ -4,13 +4,20 @@ import Hero from "../Hero/Hero";
 import Navbar from "../Navbar/Navbar";
 
 const Landing = () => {
-	return (
-		<>
-			<Navbar />
-			<Hero />
-			<UpperMain/>
-		</>
-	);
+  return (
+    <>
+      <div
+        className="main-page"
+        onScroll={() => {
+          console.log("scroll");
+        }}
+      >
+        <Navbar />
+        <Hero />
+        <UpperMain />
+      </div>
+    </>
+  );
 };
 
 export default Landing;

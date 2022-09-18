@@ -3,6 +3,7 @@ import { HeroSectionWrapper } from "./Styles/HeroWrapper.styled";
 import CountUp from "react-countup";
 import { Button } from "@mui/material";
 import PriceCheckIcon from "@mui/icons-material/PriceCheck";
+import image from "./Static/Images/pngwing.com.png";
 const Hero = () => {
   return (
     <HeroSectionWrapper>
@@ -35,7 +36,11 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="hero-right-main"></div>
+        <div className="hero-right-main">
+          <div className="image-container-hero">
+            {/* <img src={image} alt="" height="300px" width="auto" /> */}
+          </div>
+        </div>
       </div>
     </HeroSectionWrapper>
   );
