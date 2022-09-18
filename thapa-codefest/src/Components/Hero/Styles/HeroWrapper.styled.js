@@ -51,14 +51,14 @@ export const HeroSectionWrapper = styled.div`
         width: 250px;
         height: 50px;
         margin-top: 30px;
-
+        background-size: 300%;
         transition: all 0.5s;
-
+        background-position: center;
         color: white;
         &:hover {
-          background-position-x: 260px;
+          background-position-x: -40px;
           color: #00e1ff;
-
+          text-shadow: 1px 1px 2px #00e1ff;
           box-shadow: 3px 0 3px #00e1ff, 0 -3px 3px #00e1ff, -3px 0 3px #00e1ff,
             0 3px 3px #00e1ff;
           width: 260px;
