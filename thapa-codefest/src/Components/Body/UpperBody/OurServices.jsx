@@ -1,12 +1,18 @@
 import React from "react";
 import { Services } from "../Static/Js/Datas";
 import { ServicesWrapper } from "../Styles/UpperBodyStyles/OurServices.styled";
-
+import { motion } from "framer-motion";
+import { fadePara2 } from "../Styles/UpperBodyStyles/Variants";
 const OurServices = () => {
   return (
     <ServicesWrapper>
       <b>Our Services Include:</b>
-      <div className="services-all-main-container">
+      <motion.div
+        className="services-all-main-container"
+        variants={fadePara2}
+        initial="offscreen"
+        whileInView="onscreen"
+      >
         {Services.map((data, index) => {
           return (
             <div className="single-service-element" key={index}>
@@ -15,7 +21,7 @@ const OurServices = () => {
             </div>
           );
         })}
-      </div>
+      </motion.div>
     </ServicesWrapper>
   );
 };
