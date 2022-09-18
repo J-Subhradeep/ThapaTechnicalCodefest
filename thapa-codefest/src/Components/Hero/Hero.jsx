@@ -2,6 +2,7 @@ import React from "react";
 import { HeroSectionWrapper } from "./Styles/HeroWrapper.styled";
 import CountUp from "react-countup";
 import { Button } from "@mui/material";
+import PriceCheckIcon from "@mui/icons-material/PriceCheck";
 const Hero = () => {
   return (
     <HeroSectionWrapper>
@@ -22,7 +23,15 @@ const Hero = () => {
               </span>
             </div>
             <div>
-              <Button className="get-started">Get Started</Button>
+              <Button className="get-started" sx={{ color: "#3dbfe6" }}>
+                Get Started
+              </Button>
+            </div>
+            <div className="money-back">
+              <PriceCheckIcon
+                style={{ paddingRight: "5px", fontSize: "28px" }}
+              />
+              <span>30-day money-back guarantee</span>
             </div>
           </div>
         </div>
