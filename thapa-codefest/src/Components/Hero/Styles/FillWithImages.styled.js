@@ -3,7 +3,7 @@ export const FillWithImageWrapper = styled.div`
 .right-round {
     height: 50px;
     width: 50px;
-    background-image: radial-gradient(#e664644c, #9198e55e);
+    background-image: radial-gradient(#e6646421, #9198e528);
     position: absolute;
     bottom: 150px;
     right: 100px;
@@ -13,7 +13,7 @@ export const FillWithImageWrapper = styled.div`
   .right-round2 {
     height: 70px;
     width: 70px;
-    background-image: radial-gradient(#e664644c, #9198e55e);
+    background-image: radial-gradient(#e6646421, #9198e526);
     position: absolute;
     bottom: 70px;
     right: 150px;

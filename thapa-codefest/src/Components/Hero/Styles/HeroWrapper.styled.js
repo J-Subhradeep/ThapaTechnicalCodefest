@@ -7,7 +7,7 @@ export const HeroSectionWrapper = styled.div`
     #0000ffb5 0%,
     rgba(103, 61, 230, 1) 20%,
     rgba(77, 29, 223, 1) 70%,
-    #7e7ef9 100%
+    #6161f1 100%
   );
   contain: content;
   .right-image-main {

@@ -53,11 +53,11 @@ const Hero = () => {
                 alt=""
                 height="560px"
                 width="auto"
-                style={{ y: 4 }}
+                style={{ y: 10 }}
                 animate={{ y: 0 }}
                 transition={{
                   delay: 1.2,
-                  duration: 2,
+                  duration: 7,
                   type: "keyframes",
                   repeat: Infinity,
                   repeatType: "mirror",
