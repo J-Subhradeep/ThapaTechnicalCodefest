@@ -1,16 +1,16 @@
 import React from "react";
-import UpperMain from "../Body/UpperBody/UpperMain";
+import Main from "../Body/Main";
 import Hero from "../Hero/Hero";
 import Navbar from "../Navbar/Navbar";
 
 const Landing = () => {
-	return (
-		<>
-			<Navbar />
-			<Hero />
-			<UpperMain/>
-		</>
-	);
+  return (
+    <>
+      <Navbar />
+      <Hero />
+      <Main />
+    </>
+  );
 };
 
 export default Landing;
