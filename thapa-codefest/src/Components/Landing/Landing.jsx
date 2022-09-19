@@ -1,4 +1,5 @@
 import React from "react";
+import LowerMain from "../Body/LowerBody/LowerMain";
 import Main from "../Body/Main";
 import UpperMain from "../Body/UpperBody/UpperMain";
 import Hero from "../Hero/Hero";
@@ -16,6 +17,7 @@ const Landing = () => {
         <Navbar />
         <Hero />
         <UpperMain />
+        <LowerMain />
       </div>
     </>
   );
