@@ -1,12 +1,12 @@
 import React from "react";
 import Main from "../Body/Main";
+import UpperMain from "../Body/UpperBody/UpperMain";
 import Hero from "../Hero/Hero";
 import Navbar from "../Navbar/Navbar";
 
 const Landing = () => {
   return (
     <>
-
       <div
         className="main-page"
         onScroll={() => {
@@ -17,7 +17,6 @@ const Landing = () => {
         <Hero />
         <UpperMain />
       </div>
-
     </>
   );
 };
