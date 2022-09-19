@@ -1,32 +1,20 @@
 export const Imagedata = [
-    {
-      Image:
-        "https://assets.hostinger.com/Images/homepage2020/easy-to-set-up-6e4616539f.mp4",
-      lightHeader: "EASY TO USE AND SIMPLE",
-      darkHeader: "Easy to set up",
-      desc: "Getting your website live is as simple as a click of a button. Everything you need - provided in a clear way.",
-    },
-    {
-      Image:
-        "https://assets.hostinger.com/Images/homepage2020/simply-fast-websites-ad53591419.mp4",
-      lightHeader: "PERFORMANCE AND SPEED",
-      darkHeader: "Lightning-fast websites",
-      desc: "Website speed can slow or grow your business. Delight your visitors with a fast-loading and optimized website.",
-    },
-    {
-      Image:
-        "https://assets.hostinger.com/Images/homepage2020/easy-to-set-up-6e4616539f.mp4",
-      lightHeader: "EASY TO USE AND SIMPLE",
-      darkHeader: "Easy to set up",
-      desc: "Getting your website live is as simple as a click of a button. Everything you need - provided in a clear way.",
-    },
-    {
-      Image:
-        "https://assets.hostinger.com/Images/homepage2020/easy-to-set-up-6e4616539f.mp4",
-      lightHeader: "EASY TO USE AND SIMPLE",
-      darkHeader: "Easy to set up",
-      desc: "Getting your website live is as simple as a click of a button. Everything you need - provided in a clear way.",
-    },
-    
-  ];
-  
+  {
+    image:
+      "https://assets.hostinger.com/images/homepage2020/control-panel-section/user-icon-923934a391.svg",
+    darkHeader: "Ease of Use",
+    desc: "Hostinger Panel is extremely user-friendly and can be used by those with little experience in website development.",
+  },
+  {
+    image:
+      "https://assets.hostinger.com/images/homepage2020/control-panel-section/chart-icon-3472a5b9a8.svg",
+    darkHeader: "Powerful",
+    desc: "A wide variety of tools to satisfy advanced user and website developer needs.",
+  },
+  {
+    image:
+      "https://assets.hostinger.com/images/homepage2020/control-panel-section/wp-icon-9be267d135.svg",
+    darkHeader: "WordPress Optimized",
+    desc: "Get more speed, better SEO, visitor retention and conversions with our custom-built WP optimization stack and LiteSpeed cache.",
+  },
+];

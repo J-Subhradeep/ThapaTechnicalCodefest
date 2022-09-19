@@ -9,9 +9,10 @@ const SingleVideoComp = (props) => {
             <p className="light-header">{props.lightHeader}</p>
             <p className="desp-header">{props.darkHeader}</p>
             <p className="description-main">{props.desc}</p>
+            <p className="link">{props.link}</p>
           </div>
           <div className="video-elements">
-            <video autoPlay loop className="video-data ">
+            <video muted loop autoPlay className="video-data ">
               <source src={props.video} type="video/mp4" />{" "}
             </video>
           </div>
@@ -19,7 +20,7 @@ const SingleVideoComp = (props) => {
       ) : (
         <div className="main-container2">
           <div className="video-elements">
-            <video autoPlay loop className="video-data">
+            <video muted loop autoPlay className="video-data">
               <source src={props.video} type="video/mp4" />{" "}
             </video>
           </div>

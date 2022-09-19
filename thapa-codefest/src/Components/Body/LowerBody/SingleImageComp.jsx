@@ -6,12 +6,9 @@ const SingleImageComp = (props) => {
     <SingleImgCompWrapper>
       <div className="main-container">
         <div className="description-of-videos">
-          <p className="light-header">{props.lightHeader}</p>
+          <img src={props.image} />
           <p className="desp-header">{props.darkHeader}</p>
           <p className="description-main">{props.desc}</p>
-        </div>
-        <div className="video-elements">
-          <img className="image-data" src={props.image} />
         </div>
       </div>
     </SingleImgCompWrapper>
