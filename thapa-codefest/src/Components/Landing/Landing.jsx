@@ -6,9 +6,18 @@ import Navbar from "../Navbar/Navbar";
 const Landing = () => {
   return (
     <>
-      <Navbar />
-      <Hero />
-      <Main />
+
+      <div
+        className="main-page"
+        onScroll={() => {
+          console.log("scroll");
+        }}
+      >
+        <Navbar />
+        <Hero />
+        <UpperMain />
+      </div>
+
     </>
   );
 };

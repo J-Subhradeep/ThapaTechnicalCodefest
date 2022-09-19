@@ -4,3 +4,10 @@
   margin: 0;
   font-family: 'Lato', sans-serif;
 }
+.main-page{
+  height: 100vh;
+  overflow-y: scroll;
+}
+.main-page::-webkit-scrollbar{
+  display: none;
+}

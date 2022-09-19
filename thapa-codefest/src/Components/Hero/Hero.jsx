@@ -2,6 +2,12 @@ import React from "react";
 import { HeroSectionWrapper } from "./Styles/HeroWrapper.styled";
 import CountUp from "react-countup";
 import { Button } from "@mui/material";
+import PriceCheckIcon from "@mui/icons-material/PriceCheck";
+import image from "./Static/Images/y.png";
+import { ImageContainerWrapper } from "./Styles/ImageContainer.styled";
+import { motion } from "framer-motion";
+import { FillWithImages } from "./FillWithImages";
+
 const Hero = () => {
   return (
     <HeroSectionWrapper>
@@ -22,11 +28,45 @@ const Hero = () => {
               </span>
             </div>
             <div>
-              <Button className="get-started">Get Started</Button>
+              <Button className="get-started" sx={{ color: "#3dbfe6" }}>
+                Get Started
+              </Button>
+            </div>
+            <div className="money-back">
+              <PriceCheckIcon
+                style={{ paddingRight: "5px", fontSize: "28px" }}
+              />
+              <span>30-day money-back guarantee</span>
             </div>
           </div>
         </div>
-        <div className="hero-right-main"></div>
+        <div className="hero-right-main">
+          <motion.div
+            className="right-image-main"
+            initial={{ y: -100, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 1.3, delay: 0.5 }}
+          >
+            <ImageContainerWrapper>
+              <motion.img
+                src={image}
+                alt=""
+                height="560px"
+                width="auto"
+                style={{ y: 10 }}
+                animate={{ y: 0 }}
+                transition={{
+                  delay: 1.2,
+                  duration: 7,
+                  type: "keyframes",
+                  repeat: Infinity,
+                  repeatType: "mirror",
+                }}
+              />
+            </ImageContainerWrapper>
+          </motion.div>
+          <FillWithImages />
+        </div>
       </div>
     </HeroSectionWrapper>
   );
