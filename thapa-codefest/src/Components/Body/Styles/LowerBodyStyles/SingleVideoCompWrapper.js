@@ -7,11 +7,11 @@ export const SingleVideoCompWrapper = styled.section`
     justify-content: space-around;
     align-items: center;
     width: 100vw;
-    margin: 50px;
+    margin: 10px;
     text-align: justify;
   }
   .description-of-videos {
-    width: 40vw;
+    width: 35vw;
     padding: 0px 50px;
   }
   .video-data {
@@ -39,11 +39,14 @@ export const SingleVideoCompWrapper = styled.section`
     line-height: 20px;
     color: #727586;
   }
+  .link{
+    text-decoration: underline;
+    margin-top:10px;
+  }
   @media (max-width: 820px) {
     .main-container {
       flex-direction: column;
       text-align: center;
-      margin-bottom: 0px;
     }
     .main-container2 {
       flex-direction: column-reverse;
@@ -53,6 +56,7 @@ export const SingleVideoCompWrapper = styled.section`
     .description-of-videos,
     .video-data {
       width: 70vw;
+      padding-top: 20px;
     }
   }
   @media (max-width: 700px) {
