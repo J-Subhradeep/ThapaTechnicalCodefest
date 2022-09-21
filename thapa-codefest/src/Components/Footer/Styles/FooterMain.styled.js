@@ -8,6 +8,7 @@ export const FooterMain = styled.div`
 	/* align-items: center; */
 	justify-content: center;
 	flex-wrap: wrap;
+	contain: content;
 	@media screen and (max-width: 768px) {
 		justify-content: flex-start;
 	}

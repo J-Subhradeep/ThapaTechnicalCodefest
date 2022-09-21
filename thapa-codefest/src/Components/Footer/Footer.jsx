@@ -6,6 +6,12 @@ import { HostingList } from "./Static/Js/HostingList";
 import { DomainList } from "./Static/Js/DomainList";
 import { InformationList } from "./Static/Js/InformationList";
 import { CompanyList } from "./Static/Js/CompanyList";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import YouTubeIcon from "@mui/icons-material/YouTube";
+import SocialMedia from "./SocialMedia";
 const Footer = () => {
 	return (
 		<div>
@@ -33,6 +39,7 @@ const Footer = () => {
 						list={["Tutorials", "Knowledge Base", "Report Online Abuse"]}
 					/>
 				</div>
+				<SocialMedia />
 			</FooterMain>
 		</div>
 	);
