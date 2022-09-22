@@ -40,6 +40,13 @@ const Footer = () => {
 					/>
 				</div>
 				<SocialMedia />
+				<div className="copyright">
+					<span>
+						© 2004-2022 hostinger.in - India’s #1 Web Hosting & Domains
+						provider.
+					</span>
+					<span>Prices are listed without VAT</span>
+				</div>
 			</FooterMain>
 		</div>
 	);

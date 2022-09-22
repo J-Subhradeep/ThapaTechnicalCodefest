@@ -1,5 +1,7 @@
 import Email from "@mui/icons-material/Email";
 import VpnKey from "@mui/icons-material/VpnKey";
+import image from "./image.png";
+
 import {
 	Button,
 	Checkbox,
@@ -40,6 +42,8 @@ const Login = () => {
 						transition={{ duration: 0.4, delay: 0.3 }}
 					>
 						<span className="heading-text">Login</span>
+						<br />
+						<span className="subheading-text">{"Welcome to Hostinger"}</span>
 					</motion.div>
 					<div className="inputs">
 						<InputLabel
@@ -112,6 +116,10 @@ const Login = () => {
 						</IconButton>
 					</motion.div>
 				</motion.div>
+				<img src={image} alt="" className="image1" />
+				{/* <div className="image2"> */}
+
+				{/* </div> */}
 			</LoginWrapper>
 		</div>
 	);
