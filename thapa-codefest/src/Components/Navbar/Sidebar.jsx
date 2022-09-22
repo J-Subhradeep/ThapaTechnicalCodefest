@@ -32,6 +32,7 @@ import wordpress from "./Static/Images/wordpress2.png";
 import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
 import LanguageIcon from "@mui/icons-material/Language";
 import CloudCircleIcon from "@mui/icons-material/CloudCircle";
+import { Link } from "react-router-dom";
 const Subheader = styled.div`
 	height: 70px;
 
@@ -133,16 +134,18 @@ const Sidebar = ({ openSidebar, setOpenSidebar }) => {
 							{ icon: <AlternateEmailIcon />, name: "Hostinger Email Hosting" },
 						]}
 					/>
-					<Button
-						className="login-btnn"
-						sx={{
-							color: "rgb(103,61,230)",
-							border: "1px solid rgb(103, 61, 230)",
-						}}
-						endIcon={<VpnKey />}
-					>
-						Login
-					</Button>
+					<Link to="/login" style={{ textDecoration: "none" }}>
+						<Button
+							className="login-btnn"
+							sx={{
+								color: "rgb(103,61,230)",
+								border: "1px solid rgb(103, 61, 230)",
+							}}
+							endIcon={<VpnKey />}
+						>
+							Login
+						</Button>
+					</Link>
 				</List>
 			</SidebarWrapper>
 		</SwipeableDrawer>

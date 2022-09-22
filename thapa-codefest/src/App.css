@@ -4,3 +4,19 @@
   margin: 0;
   font-family: 'Lato', sans-serif;
 }
+.main-page{
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.main-page::-webkit-scrollbar{
+  /* display: none;
+   */
+   width: 2px;
+   background-color:transparent;
+   border-radius:5px;
+  }
+  .main-page::-webkit-scrollbar-thumb{
+  border-radius:5px;
+  background-color: blueviolet;
+}
