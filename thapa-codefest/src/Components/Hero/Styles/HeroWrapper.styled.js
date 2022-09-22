@@ -4,10 +4,10 @@ export const HeroSectionWrapper = styled.div`
 	height: 100vh;
 	background-image: linear-gradient(
 		145deg,
-		#0000ffb5 0%,
-		rgba(103, 61, 230, 1) 20%,
-		rgba(77, 29, 223, 1) 70%,
-		#6161f1 100%
+		#0000ffa2 0%,
+		#673de6c3 20%,
+		#4e1ddfbe 70%,
+		#3131f4d2 100%
 	);
 	contain: content;
 	.right-image-main {
@@ -51,7 +51,7 @@ export const HeroSectionWrapper = styled.div`
 				background-color: red;
 				background-image: linear-gradient(
 					145deg,
-					#3faae7 0%,
+					#37b6ff 0%,
 					#468ef1 2%,
 					rgba(255, 0, 202, 1) 100%
 				);
@@ -59,7 +59,7 @@ export const HeroSectionWrapper = styled.div`
 				width: 250px;
 				height: 50px;
 				margin-top: 30px;
-				background-size: 300%;
+				background-size: 400%;
 				transition: all 0.5s;
 				background-position: center;
 				color: white;
@@ -141,7 +141,7 @@ export const HeroSectionWrapper = styled.div`
 				.left-heading {
 					font-size: 20px;
 					/* color: green; */
-					width: 350px;
+					width: 300px;
 				}
 				.get-started {
 					margin-top: 45px;

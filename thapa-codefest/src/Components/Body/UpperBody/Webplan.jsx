@@ -66,12 +66,9 @@ const Webplan = () => {
 									<span>/mo</span>
 								</div>
 								<b>₹249.00/mo when you renew</b>
-								<Button
-									variant="contained"
-									className="btn-select-pricing-grid-main"
-								>
-									Select
-								</Button>
+							</div>
+							<div className="select-plan">
+								<Button className="btn-select-plan">Select</Button>
 							</div>
 						</div>
 					</Grid>
