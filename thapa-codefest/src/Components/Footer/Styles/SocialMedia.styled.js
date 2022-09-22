@@ -3,6 +3,7 @@ export const SocialMediaWrapper = styled.div`
 	position: relative;
 	/* display: flex; */
 	left: 0;
+	/* width: 100%; */
 	bottom: 0;
 	.social-media {
 		position: absolute;
@@ -18,5 +19,19 @@ export const SocialMediaWrapper = styled.div`
 				scale: 1.09;
 			}
 		}
+	}
+	@media screen and (max-width: 800px) {
+		/* .social-media { */
+		/* left: 60px; */
+		/* display: flex; */
+		/* justify-content: center; */
+		/* width: 100%; */
+		.social-media {
+			left: 20px;
+			position: relative;
+			/* background-color: red; */
+		}
+		/* transform: translate(50%, 0); */
+		/* } */
 	}
 `;

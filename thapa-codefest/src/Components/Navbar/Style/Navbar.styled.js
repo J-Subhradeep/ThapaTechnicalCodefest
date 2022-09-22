@@ -2,7 +2,7 @@ import styled from "styled-components";
 export const NavbarWrapper = styled.div`
 	width: 100%;
 	position: fixed;
-	background-color: white;
+	background-color: #ffffffe6;
 	height: 70px;
 	z-index: 100;
 	.main {

@@ -18,6 +18,7 @@ import { IconButton } from "@mui/material";
 import Menu from "@mui/icons-material/Menu";
 import Sidebar from "./Sidebar";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 const Navbar = () => {
 	const dispatch = useDispatch();
 	const [openSidebar, setOpenSidebar] = useState(false);
@@ -35,9 +36,15 @@ const Navbar = () => {
 			<Sidebar openSidebar={openSidebar} setOpenSidebar={setOpenSidebar} />
 			<NavbarWrapper>
 				<div className="main">
-					<motion.div className="logo" initial={{ y: -100 }} animate={{ y: 0 }}>
-						<Image src={image} alt="Logo" />
-					</motion.div>
+					<Link to="/" style={{ textDecoration: "none" }}>
+						<motion.div
+							className="logo"
+							initial={{ y: -100 }}
+							animate={{ y: 0 }}
+						>
+							<Image src={image} alt="Logo" />
+						</motion.div>
+					</Link>
 					<div className="menu">
 						<div className="menu-list" id="nav">
 							{menu.map((value, index) => (
@@ -51,16 +58,18 @@ const Navbar = () => {
 							}}
 						>
 							{/* <div> */}
-							<Button
-								className="login-btn"
-								sx={{
-									color: "rgb(103,61,230)",
-									border: "1px solid rgb(103, 61, 230)",
-								}}
-								endIcon={<VpnKeyIcon />}
-							>
-								Login
-							</Button>
+							<Link to="/login" style={{ textDecoration: "none" }}>
+								<Button
+									className="login-btn"
+									sx={{
+										color: "rgb(103,61,230)",
+										border: "1px solid rgb(103, 61, 230)",
+									}}
+									endIcon={<VpnKeyIcon />}
+								>
+									Login
+								</Button>
+							</Link>
 							<Button
 								className="login-btn"
 								sx={{ color: "rgb(103,61,230)", marginX: "10px" }}
@@ -72,14 +81,9 @@ const Navbar = () => {
 								className="menu-btn-2"
 								sx={{ color: "rgb(103,61,230)", marginX: "10px" }}
 							>
-								<VpnKeyIcon />
-							</IconButton>
-							<IconButton
-								className="menu-btn-2"
-								sx={{ color: "rgb(103,61,230)", marginX: "10px" }}
-							>
 								<ShoppingCartIcon />
 							</IconButton>
+
 							<IconButton
 								className="menu-btn"
 								sx={{ color: "rgb(103,61,230)", marginX: "10px" }}
